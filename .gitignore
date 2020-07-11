@@ -1,0 +1,5 @@
+#ignore _pycache_ venv
+_pycache_
+venv
+#ignore test.py
+test.py
