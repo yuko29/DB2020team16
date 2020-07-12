@@ -34,6 +34,7 @@ def stockdateinfo(date):
         cursorObj = db.cursor()
         cursorObj.execute(record)
         db.commit()
+    db.close()
     return data
     
 def worldcovidvsstock():
@@ -58,6 +59,7 @@ def worldcovidvsstock():
         for i in range(len(row)):
             tmp.append(row[i])
         data['Data'].append(tmp)
+    db.close()
     return data
 
 def twcovidvsstock():
@@ -93,6 +95,7 @@ def twcovidvsstock():
         for i in range(len(row)):
             tmp.append(row[i])
         data['Data'].append(tmp)
+    db.close()
     return data
 
 def UScovidvsstock():
@@ -128,6 +131,7 @@ def UScovidvsstock():
         for i in range(len(row)):
             tmp.append(row[i])
         data['Data'].append(tmp)
+    db.close()
     return data
 
 def commonCountry():
@@ -143,6 +147,7 @@ def commonCountry():
     data = []
     for row in cursor:
         data.append(row[0])
+    db.close()
     return data
 
 def countryinfo(country):
@@ -176,6 +181,7 @@ def countryinfo(country):
         for i in range(len(row)):
             tmp.append(row[i])
         data['Data'].append(tmp)
+    db.close()
     return data
 
 def historyrecord(): 
@@ -196,6 +202,7 @@ def historyrecord():
         for i in range(len(row)):
             tmp.append(row[i])
         data['Data'].append(tmp)
+    db.close()
     return data
 
 def historydel():
@@ -219,6 +226,7 @@ def historydel():
         for i in range(len(row)):
             tmp.append(row[i])
         data['Data'].append(tmp)
+    db.close()
     return data
 
 def regionCovid19Case():
@@ -256,6 +264,7 @@ def regionCovid19Case():
         for i in range(len(row)):
             tmp.append(row[i])
         data['Data'].append(tmp)
+    db.close()
     return data
 
 def regionCovid19Death():
@@ -292,6 +301,7 @@ def regionCovid19Death():
         for i in range(len(row)):
             tmp.append(row[i])
         data['Data'].append(tmp)
+    db.close()
     return data
 
 def regionMaxDeathMoninfo(region):
@@ -328,6 +338,7 @@ def regionMaxDeathMoninfo(region):
         for i in range(len(row)):
             tmp.append(row[i])
         data['Data'].append(tmp)
+    db.close()
     return data
 
 def regionMaxCaseMoninfo(region):
@@ -366,6 +377,7 @@ def regionMaxCaseMoninfo(region):
         for i in range(len(row)):
             tmp.append(row[i])
         data['Data'].append(tmp)
+    db.close()
     return data
 
 def regionSARSDeath():
@@ -386,6 +398,7 @@ def regionSARSDeath():
         for i in range(len(row)):
             tmp.append(row[i])
         data['Data'].append(tmp)
+    db.close()
     return data
 
 def regionSARSCase():
@@ -406,6 +419,7 @@ def regionSARSCase():
         for i in range(len(row)):
             tmp.append(row[i])
         data['Data'].append(tmp)
+    db.close()
     return data
 
 def regionSARSMaxCaseMoninfo(region):
@@ -442,6 +456,7 @@ def regionSARSMaxCaseMoninfo(region):
         for i in range(len(row)):
             tmp.append(row[i])
         data['Data'].append(tmp)
+    db.close()
     return data
 
 def regionSARSMaxDeathMoninfo(region):
@@ -478,6 +493,7 @@ def regionSARSMaxDeathMoninfo(region):
         for i in range(len(row)):
             tmp.append(row[i])
         data['Data'].append(tmp)
+    db.close()
     return data
 
 
@@ -547,4 +563,5 @@ def regionRateinfo(region):
         for i in range(len(row)):
             tmp.append(row[i])
         data['Data'].append(tmp)
+    db.close()
     return data
