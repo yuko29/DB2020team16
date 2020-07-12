@@ -34,7 +34,7 @@ $(document).ready(function() {
 
 		},
 		error: function(result){
-			alert("Error.\nMaybe you have closed the app.\nPlease check the status.");
+			alert("Error.\nMaybe you have closed the app or have a illegal query to database.\nPlease check the status.");
 		}	
     })
     $.ajax({
@@ -72,7 +72,7 @@ $(document).ready(function() {
 
 		},
 		error: function(result){
-			alert("Error.\nMaybe you have closed the app.\nPlease check the status.");
+			alert("Error.\nMaybe you have closed the app or have a illegal query to database.\nPlease check the status.");
 		}	
     })
     $.ajax({
@@ -112,7 +112,7 @@ $(document).ready(function() {
 
 		},
 		error: function(result){
-			alert("Error.\nMaybe you have closed the app.\nPlease check the status.");
+			alert("Error.\nMaybe you have closed the app or have a illegal query to database.\nPlease check the status.");
 		}	
     })
 });  
@@ -165,7 +165,7 @@ $("#stockdatebtn").bind("click", function(){
 			$("#stockdatebtn").removeAttr("disabled");
 		},
 		error: function(result){
-			alert("Error.\nMaybe you have closed the app.\nPlease check the status.");
+			alert("Error.\nMaybe you have closed the app or have a illegal query to database.\nPlease check the status.");
 		}		
     })
     
@@ -206,7 +206,7 @@ $("#stockdatebtn").bind("click", function(){
 			//$("#stockdatebtn").removeAttr("disabled");
 		},
 		error: function(result){
-			alert("Error.\nMaybe you have closed the app.\nPlease check the status.");
+			alert("Error.\nMaybe you have closed the app or have a illegal query to database.\nPlease check the status.");
 		}		
     })
     
@@ -252,7 +252,7 @@ $("#historydelbtn").bind("click", function(){
 			$("#historydelbtn").removeAttr("disabled");
 		},
 		error: function(result){
-			alert("Error.\nMaybe you have closed the app.\nPlease check the status.");
+			alert("Error.\nMaybe you have closed the app or have a illegal query to database.\nPlease check the status.");
 		}		
     })
 })
@@ -301,7 +301,7 @@ $("#regionRatebtn").bind("click", function(){
 			$("#regionRatedatabtn").removeAttr("disabled");
 		},
 		error: function(result){
-			alert("Error.\nMaybe you have closed the app.\nPlease check the status.");
+			alert("Error.\nMaybe you have closed the app or have a illegal query to database.\nPlease check the status.");
 		}
 		
 	})

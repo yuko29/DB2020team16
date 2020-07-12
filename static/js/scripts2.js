@@ -38,7 +38,7 @@ $(document).ready(function() {
 			
 		},
 		error: function(result){
-			alert("Error.\nMaybe you have closed the app.\nPlease check the status.");
+			alert("Error.\nMaybe you have closed the app or have a illegal query to database.\nPlease check the status.");
 		}		
     })
     $.ajax({
@@ -78,7 +78,7 @@ $(document).ready(function() {
 			
 		},
 		error: function(result){
-			alert("Error.\nMaybe you have closed the app.\nPlease check the status.");
+			alert("Error.\nMaybe you have closed the app or have a illegal query to database.\nPlease check the status.");
 		}		
     })
     //sars
@@ -119,7 +119,7 @@ $(document).ready(function() {
 			
 		},
 		error: function(result){
-			alert("Error.\nMaybe you have closed the app.\nPlease check the status.");
+			alert("Error.\nMaybe you have closed the app or have a illegal query to database.\nPlease check the status.");
 		}		
     })
     $.ajax({
@@ -159,7 +159,7 @@ $(document).ready(function() {
 			
 		},
 		error: function(result){
-			alert("Error.\nMaybe you have closed the app.\nPlease check the status.");
+			alert("Error.\nMaybe you have closed the app or have a illegal query to database.\nPlease check the status.");
 		}		
     })
 
@@ -210,7 +210,7 @@ $("#regionMaxCaseMonbtn").bind("click", function(){
 			$("#regionMaxCaseMonbtn").removeAttr("disabled");
 		},
 		error: function(result){
-			alert("Error.\nMaybe you have closed the app.\nPlease check the status.");
+			alert("Error.\nMaybe you have closed the app or have a illegal query to database.\nPlease check the status.");
 		}
 		
 	})
@@ -261,7 +261,7 @@ $("#regionMaxDeathMonbtn").bind("click", function(){
 			$("#regionMaxDeathMonbtn").removeAttr("disabled");
 		},
 		error: function(result){
-			alert("Error.\nMaybe you have closed the app.\nPlease check the status.");
+			alert("Error.\nMaybe you have closed the app or have a illegal query to database.\nPlease check the status.");
 		}
 		
 	})
@@ -312,7 +312,7 @@ $("#regionSARSMaxCaseMonbtn").bind("click", function(){
 			$("#regionSARSMaxCaseMonbtn").removeAttr("disabled");
 		},
 		error: function(result){
-			alert("Error.\nMaybe you have closed the app.\nPlease check the status.");
+			alert("Error.\nMaybe you have closed the app or have a illegal query to database.\nPlease check the status.");
 		}
 		
 	})
@@ -363,7 +363,7 @@ $("#regionSARSMaxDeathMonbtn").bind("click", function(){
 			$("#regionSARSMaxDeathMonbtn").removeAttr("disabled");
 		},
 		error: function(result){
-			alert("Error.\nMaybe you have closed the app.\nPlease check the status.");
+			alert("Error.\nMaybe you have closed the app or have a illegal query to database.\nPlease check the status.");
 		}
 		
 	})
@@ -414,7 +414,7 @@ $("#countryinfobtn").bind("click", function(){
 			$("#countryinfobtn").removeAttr("disabled");
 		},
 		error: function(result){
-			alert("Error.\nMaybe you have closed the app.\nPlease check the status.");
+			alert("Error.\nMaybe you have closed the app or have a illegal query to database.\nPlease check the status.");
 		}
 		
 	})
