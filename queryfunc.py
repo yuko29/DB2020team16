@@ -312,7 +312,7 @@ def regionMaxDeathMoninfo(region):
      from (\
 	      select SUBSTR(covid19.Date_reported, 1, 7) as date, Country, covid19.WHO_region as region, SUM(covid19.New_deaths) as deaths\
 	      from who_covid_19 as covid19\
-		  where region = 'EMRO'\
+		  where region = '" + str(region) +"'\
 	      group by date, Country\
           ) as DR_data\
      group by date\
@@ -495,9 +495,6 @@ def regionSARSMaxDeathMoninfo(region):
         data['Data'].append(tmp)
     db.close()
     return data
-
-
-
 
 def regionRateinfo(region):
     import sqlite3
